@@ -8,9 +8,16 @@ File bai lam: [sql/QuanLyDiemThi.sql](sql/QuanLyDiemThi.sql)
 
 ## Bai tap SQL - QuanLySinhVien
 
-- [sql/QuanLySinhVien.sql](sql/QuanLySinhVien.sql)
-- [sql/QuanLySinhVien_InsertData.sql](sql/QuanLySinhVien_InsertData.sql)
-- [sql/QuanLySinhVien_SelectQuery.sql](sql/QuanLySinhVien_SelectQuery.sql)
+- [sql/QuanLySinhVien.sql](sql/QuanLySinhVien.sql) - Tao CSDL va cac bang.
+- [sql/QuanLySinhVien_InsertData.sql](sql/QuanLySinhVien_InsertData.sql) - Them du lieu bang INSERT INTO.
+- [sql/QuanLySinhVien_SelectQuery.sql](sql/QuanLySinhVien_SelectQuery.sql) - Bai tap SELECT/JOIN co ban.
+- [sql/QuanLySinhVien_AdvancedQuery.sql](sql/QuanLySinhVien_AdvancedQuery.sql) - LIKE, MONTH, BETWEEN, UPDATE, JOIN va ORDER BY.
+
+Thu tu chay de lam cac bai truy van:
+
+1. `QuanLySinhVien.sql`
+2. `QuanLySinhVien_InsertData.sql`
+3. File truy van tuong ung.
 
 ## Bai tap SQL - QuanLyBanHang
 
@@ -30,17 +37,9 @@ File bai lam: [sql/QuanLyBanHang.sql](sql/QuanLyBanHang.sql)
 
 ## Bai tap FlashMart - JOIN & Anti-Join
 
-File nop bai:
-
-- [flashmart/flashmart_reports.sql](flashmart/flashmart_reports.sql) - Tao bang, chen du lieu, LEFT JOIN, COUNT va Anti-Join.
-- [flashmart/join_analysis.md](flashmart/join_analysis.md) - Giai thich vi sao dung COUNT(o.order_id) thay vi COUNT(*).
-- [flashmart/ai_prompt_log.md](flashmart/ai_prompt_log.md) - Nhat ky hoi dap ly thuyet JOIN voi AI.
-
-Ket qua mong doi:
-
-- Bao cao Marketing: Alice = 2, Bob = 1, Charlie = 0.
-- Khach chua mua hang: Charlie.
-- San pham chua tung ban: Keyboard (103).
+- [flashmart/flashmart_reports.sql](flashmart/flashmart_reports.sql)
+- [flashmart/join_analysis.md](flashmart/join_analysis.md)
+- [flashmart/ai_prompt_log.md](flashmart/ai_prompt_log.md)
 
 ## Cach chay
 
