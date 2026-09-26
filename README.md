@@ -8,27 +8,15 @@ File bai lam: [sql/QuanLyDiemThi.sql](sql/QuanLyDiemThi.sql)
 
 ## Bai tap SQL - QuanLySinhVien
 
-- [sql/QuanLySinhVien.sql](sql/QuanLySinhVien.sql) - Tao CSDL va cac bang.
-- [sql/QuanLySinhVien_InsertData.sql](sql/QuanLySinhVien_InsertData.sql) - Them du lieu bang INSERT INTO.
-- [sql/QuanLySinhVien_SelectQuery.sql](sql/QuanLySinhVien_SelectQuery.sql) - Bai tap SELECT/JOIN co ban.
-- [sql/QuanLySinhVien_AdvancedQuery.sql](sql/QuanLySinhVien_AdvancedQuery.sql) - LIKE, MONTH, BETWEEN, UPDATE, JOIN va ORDER BY.
+- [sql/QuanLySinhVien.sql](sql/QuanLySinhVien.sql)
+- [sql/QuanLySinhVien_InsertData.sql](sql/QuanLySinhVien_InsertData.sql)
+- [sql/QuanLySinhVien_SelectQuery.sql](sql/QuanLySinhVien_SelectQuery.sql)
+- [sql/QuanLySinhVien_AdvancedQuery.sql](sql/QuanLySinhVien_AdvancedQuery.sql)
 
 ## Bai tap SQL - QuanLyBanHang
 
-- [sql/QuanLyBanHang.sql](sql/QuanLyBanHang.sql) - Tao CSDL va 4 bang Customer, Order, Product, OrderDetail.
-- [sql/QuanLyBanHang_InsertAndQuery.sql](sql/QuanLyBanHang_InsertAndQuery.sql) - Them du lieu va thuc hien cac truy van theo de bai.
-
-Noi dung truy van QuanLyBanHang:
-
-- Hien thi oID, oDate, oPrice cua cac hoa don.
-- Hien thi khach hang da mua hang va san pham duoc mua.
-- Tim khach hang chua mua bat ky san pham nao.
-- Tinh tong tien tung hoa don bang SUM(odQTY * pPrice).
-
-Thu tu chay:
-
-1. `QuanLyBanHang.sql`
-2. `QuanLyBanHang_InsertAndQuery.sql`
+- [sql/QuanLyBanHang.sql](sql/QuanLyBanHang.sql)
+- [sql/QuanLyBanHang_InsertAndQuery.sql](sql/QuanLyBanHang_InsertAndQuery.sql)
 
 ## Bai tap HealthSync
 
@@ -47,6 +35,22 @@ Thu tu chay:
 - [flashmart/flashmart_reports.sql](flashmart/flashmart_reports.sql)
 - [flashmart/join_analysis.md](flashmart/join_analysis.md)
 - [flashmart/ai_prompt_log.md](flashmart/ai_prompt_log.md)
+
+## Bai tap PayFlow - EXPLAIN, Index & SARGable
+
+File nop bai:
+
+- [payflow/payflow_optimized.sql](payflow/payflow_optimized.sql) - Tao bang, du lieu mo phong, EXPLAIN, composite index va truy van SARGable.
+- [payflow/explain_analysis.md](payflow/explain_analysis.md) - So sanh execution plan truoc va sau toi uu.
+- [payflow/ai_prompt_log.md](payflow/ai_prompt_log.md) - Nhat ky cau hoi ky thuat ve Index, B-Tree, SARGable va EXPLAIN.
+
+Diem chinh:
+
+- Legacy query dung YEAR()/MONTH() tren created_at.
+- Tao composite index idx_type_date(transaction_type, created_at).
+- Refactor sang created_at >= '2026-06-01' AND created_at < '2026-07-01'.
+- Muc tieu EXPLAIN: type tu ALL sang range/ref, key hien idx_type_date va rows giam manh.
+- Co ghi chu ve EXPLAIN ANALYZE de xem actual time/rows tren MySQL 8.0.18+.
 
 ## Cach chay
 
