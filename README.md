@@ -16,11 +16,23 @@ Bai tap INSERT INTO - them du lieu vao Class, Student, Subject va Mark:
 
 - [sql/QuanLySinhVien_InsertData.sql](sql/QuanLySinhVien_InsertData.sql)
 
+Bai tap SELECT Query - truy van du lieu:
+
+- [sql/QuanLySinhVien_SelectQuery.sql](sql/QuanLySinhVien_SelectQuery.sql)
+
+Noi dung truy van gom:
+
+- Hien thi tat ca hoc vien.
+- Hien thi hoc vien dang theo hoc.
+- Hien thi mon hoc co Credit < 10.
+- Hien thi hoc vien lop A1 bang JOIN Student va Class.
+- Hien thi diem mon CF bang JOIN Student, Mark va Subject.
+
 Thu tu chay:
 
 1. Chay `QuanLySinhVien.sql` de tao CSDL va cac bang.
 2. Chay `QuanLySinhVien_InsertData.sql` de them du lieu.
-3. Kiem tra ket qua bang cac cau lenh `SELECT *` o cuoi file.
+3. Chay `QuanLySinhVien_SelectQuery.sql` de thuc hien cac truy van.
 
 ## Bai tap SQL - QuanLyBanHang
 
@@ -36,13 +48,11 @@ File nop bai:
 
 ## Bai tap AutoRide - Activity Diagram & Database Integrity
 
-Bai thuc hanh phan tich cac Data Gap giua quy trinh thue/tra xe va Legacy Database, sau do nang cap schema MySQL bang ALTER TABLE.
-
 File nop bai:
 
-- [autoride/autoride_db.sql](autoride/autoride_db.sql) - DDL, ALTER TABLE, constraints, trigger va DML mo phong.
-- [autoride/er_activity_mapping.md](autoride/er_activity_mapping.md) - Phan tich ngan ve Data Gap va vai tro cua damage_fee.
-- [autoride/ai_prompt_log.md](autoride/ai_prompt_log.md) - Nhat ky cac cau hoi ky thuat da trao doi voi AI.
+- [autoride/autoride_db.sql](autoride/autoride_db.sql)
+- [autoride/er_activity_mapping.md](autoride/er_activity_mapping.md)
+- [autoride/ai_prompt_log.md](autoride/ai_prompt_log.md)
 
 ## Cach chay
 
