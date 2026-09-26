@@ -21,6 +21,29 @@ Bai lam co day du:
 
 File bai lam: [sql/QuanLyDiemThi.sql](sql/QuanLyDiemThi.sql)
 
-### Cach chay
+## Bai tap SQL - QuanLySinhVien
 
-Mo MySQL Workbench, mo file `sql/QuanLyDiemThi.sql` va chay toan bo script.
+Bai tap tao co so du lieu `QuanLySinhVien` bang cau lenh SQL, gom 4 bang:
+
+- `Class`
+- `Student`
+- `Subject`
+- `Mark`
+
+Bai lam co day du:
+
+- `PRIMARY KEY` va `AUTO_INCREMENT`.
+- Rang buoc `NOT NULL`.
+- Gia tri mac dinh bang `DEFAULT`.
+- Rang buoc `CHECK` cho `Credit >= 1`.
+- Rang buoc `CHECK` cho `Mark BETWEEN 0 AND 100`.
+- Rang buoc `UNIQUE (SubID, StudentID)`.
+- Khoa ngoai `Student.ClassID -> Class.ClassID`.
+- Khoa ngoai `Mark.SubID -> Subject.SubID`.
+- Khoa ngoai `Mark.StudentID -> Student.StudentID`.
+
+File bai lam: [sql/QuanLySinhVien.sql](sql/QuanLySinhVien.sql)
+
+## Cach chay
+
+Mo MySQL Workbench, chon file SQL can chay trong thu muc `sql`, sau do chay toan bo script.
