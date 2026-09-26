@@ -8,7 +8,19 @@ File bai lam: [sql/QuanLyDiemThi.sql](sql/QuanLyDiemThi.sql)
 
 ## Bai tap SQL - QuanLySinhVien
 
-File bai lam: [sql/QuanLySinhVien.sql](sql/QuanLySinhVien.sql)
+File tao CSDL va cac bang:
+
+- [sql/QuanLySinhVien.sql](sql/QuanLySinhVien.sql)
+
+Bai tap INSERT INTO - them du lieu vao Class, Student, Subject va Mark:
+
+- [sql/QuanLySinhVien_InsertData.sql](sql/QuanLySinhVien_InsertData.sql)
+
+Thu tu chay:
+
+1. Chay `QuanLySinhVien.sql` de tao CSDL va cac bang.
+2. Chay `QuanLySinhVien_InsertData.sql` de them du lieu.
+3. Kiem tra ket qua bang cac cau lenh `SELECT *` o cuoi file.
 
 ## Bai tap SQL - QuanLyBanHang
 
@@ -31,16 +43,6 @@ File nop bai:
 - [autoride/autoride_db.sql](autoride/autoride_db.sql) - DDL, ALTER TABLE, constraints, trigger va DML mo phong.
 - [autoride/er_activity_mapping.md](autoride/er_activity_mapping.md) - Phan tich ngan ve Data Gap va vai tro cua damage_fee.
 - [autoride/ai_prompt_log.md](autoride/ai_prompt_log.md) - Nhat ky cac cau hoi ky thuat da trao doi voi AI.
-
-Diem noi bat:
-
-- Doi status tu VARCHAR sang ENUM('BOOKED', 'ACTIVE', 'COMPLETED', 'CANCELLED').
-- Them security_deposit, late_fee, damage_fee bang DECIMAL(10,2).
-- Them CHECK de ngan gia tri am va ngan tong phi vuot tien coc.
-- Tao bang Inspections va khoa ngoai ON DELETE RESTRICT.
-- Dung trigger chan insert bien ban kiem tra khi hop dong dang BOOKED/CANCELLED.
-- Mo phong Nguyen Van A coc 10.000.000 VND, hu hong 2.000.000 VND.
-- SELECT tinh tien hoan mong doi 8.000.000 VND.
 
 ## Cach chay
 
