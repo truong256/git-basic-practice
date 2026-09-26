@@ -13,15 +13,22 @@ File bai lam: [sql/QuanLyDiemThi.sql](sql/QuanLyDiemThi.sql)
 - [sql/QuanLySinhVien_SelectQuery.sql](sql/QuanLySinhVien_SelectQuery.sql) - Bai tap SELECT/JOIN co ban.
 - [sql/QuanLySinhVien_AdvancedQuery.sql](sql/QuanLySinhVien_AdvancedQuery.sql) - LIKE, MONTH, BETWEEN, UPDATE, JOIN va ORDER BY.
 
-Thu tu chay de lam cac bai truy van:
-
-1. `QuanLySinhVien.sql`
-2. `QuanLySinhVien_InsertData.sql`
-3. File truy van tuong ung.
-
 ## Bai tap SQL - QuanLyBanHang
 
-File bai lam: [sql/QuanLyBanHang.sql](sql/QuanLyBanHang.sql)
+- [sql/QuanLyBanHang.sql](sql/QuanLyBanHang.sql) - Tao CSDL va 4 bang Customer, Order, Product, OrderDetail.
+- [sql/QuanLyBanHang_InsertAndQuery.sql](sql/QuanLyBanHang_InsertAndQuery.sql) - Them du lieu va thuc hien cac truy van theo de bai.
+
+Noi dung truy van QuanLyBanHang:
+
+- Hien thi oID, oDate, oPrice cua cac hoa don.
+- Hien thi khach hang da mua hang va san pham duoc mua.
+- Tim khach hang chua mua bat ky san pham nao.
+- Tinh tong tien tung hoa don bang SUM(odQTY * pPrice).
+
+Thu tu chay:
+
+1. `QuanLyBanHang.sql`
+2. `QuanLyBanHang_InsertAndQuery.sql`
 
 ## Bai tap HealthSync
 
